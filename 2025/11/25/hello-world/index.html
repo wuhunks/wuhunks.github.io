@@ -188,8 +188,8 @@
   const initArtalk = (el = document, pageKey = location.pathname) => {
     artalkItem = Artalk.init({
       el: el.querySelector('#artalk-wrap'),
-      server: '',
-      site: '',
+      server: 'https://jakk.zeabur.app',
+      site: '杰克科技',
       darkMode: document.documentElement.getAttribute('data-theme') === 'dark',
       ...option,
       pageKey: isShuoshuo ? pageKey : (option && option.pageKey) || pageKey
